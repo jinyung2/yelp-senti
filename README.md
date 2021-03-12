@@ -1,4 +1,4 @@
-##Yelp Review Sentiment Analysis
+## Yelp Review Sentiment Analysis
 
 Simplified program for utilizing ScalaSpark to perform Sentiment Analysis on yelp reviews. The review sentiment will be graded on a simple polarity of Positive/Negative. 
 
