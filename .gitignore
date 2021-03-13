@@ -1,5 +1,4 @@
 *.class
-*.log
 script/node_modules
 script/*.json
 

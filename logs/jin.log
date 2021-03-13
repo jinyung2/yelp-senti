@@ -1,0 +1,3 @@
+3/11
+Curated data to be used in project by writing a script to perform removal of extraneous attributes in JSON file. Further trimmed file to fit size limits of usage on ambari-node5 server. Removed review text with length < 1000 to guarantee only larger reviews will be analyzed (better word vector outcome). 
+Time Spent: 2 hours
