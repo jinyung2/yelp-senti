@@ -5,6 +5,8 @@ const INPUT_FILE = 'yelp_academic_dataset_review.json';
 const OUTPUT_FILE = 'yelp_review_trimmed.json';
 const TEST_INPUT = 'test_input.json';
 const TEST_OUTPUT = 'test_output.json';
+const INPUT_FILE_2 = 'yelp_review_trimmed_v2.json';
+const OUTPUT_FILE_2 = 'yelp_review_trimmed_v3.txt';
 
 const writeToFile = (data, filename) => {
     if (!data) {
@@ -35,4 +37,21 @@ const trim = (filename) => fs.createReadStream(filename)
         .then((data) => writeToFile(data, TEST_OUTPUT))
     });
 
-trim(TEST_INPUT)
+const trim2 = (filename) => fs.createReadStream(filename)
+.pipe(ndjson.parse())
+.on('data', (data) => {
+    return new Promise((res, rej) => {
+        let output = "";
+        output += data.stars;
+        output += ", ";
+        output += data.text.replace(/\n/gm, ' ');
+        res(output);
+    })
+    .then((data) => writeToFile(data, OUTPUT_FILE_2))
+})
+.on('end', () => {
+    console.log("** Finished writing! :D **");
+}); 
+
+// trim(TEST_INPUT)
+trim2(INPUT_FILE_2)

@@ -11,6 +11,6 @@ import scala.collection._
 
 object App {
   def main(args: Array[String]) = {
-    
+
   }
 }

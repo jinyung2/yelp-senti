@@ -1,4 +1,4 @@
 *.class
 script/node_modules
 script/*.json
-
+script/*.txt
