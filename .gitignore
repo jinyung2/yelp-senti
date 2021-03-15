@@ -4,4 +4,4 @@ script/*.json
 script/*.txt
 project/target
 target
-.idea/
+.idea
