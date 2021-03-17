@@ -28,39 +28,8 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->net.sf.py4j#py4j;0.10.4 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-mllib-local_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-mllib-local_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-mllib-local_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-mllib-local_2.11/2.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-mllib-local_2.11;2.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-mllib-local_2.11;2.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom (2.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-mllib-local_2.11;2.2.0!spark-mllib-local_2.11.pom(pom.original) (90ms)
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-parent_2.11/2.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-parent_2.11;2.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-parent_2.11;2.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom (2.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-parent_2.11;2.2.0!spark-parent_2.11.pom(pom.original) (43ms)
-[debug] sbt-chain: Checking cache for: dependency: org.apache#apache;14 {}
-[debug] sbt-chain: module revision found in cache: org.apache#apache;14
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-parent_2.11/2.2.0/jars/spark-parent_2.11.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.jar
-[debug] CLIENT ERROR:  url=https://repo1.maven.org/maven2/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.jar
-[debug] 		tried /home/jin/.sbt/preloaded/org.apache.spark/spark-parent_2.11/2.2.0/jars/spark-parent_2.11.jar
-[debug] 		tried file:////home/jin/.sbt/preloaded/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.jar
-[debug] 		tried https://repository.apache.org/snapshots/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.jar
-[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/snapshots/org/apache/spark/spark-parent_2.11/2.2.0/spark-parent_2.11-2.2.0.jar
-[debug] 	found org.apache.spark#spark-mllib-local_2.11;2.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-mllib-local_2.11;2.2.0
+[debug] 	found org.apache.spark#spark-mllib-local_2.11;2.2.0 in sbt-chain
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-mllib-local_2.11;2.2.0 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-mllib-local_2.11;2.2.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-mllib-local_2.11;2.2.0 [compile->master(compile)]
@@ -103,20 +72,8 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->commons-collections#commons-collections;3.2.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-network-shuffle_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-network-shuffle_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-network-shuffle_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-network-shuffle_2.11/2.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-network-shuffle_2.11;2.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-network-shuffle_2.11;2.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom (2.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-network-shuffle_2.11;2.2.0!spark-network-shuffle_2.11.pom(pom.original) (24ms)
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
-[debug] 	found org.apache.spark#spark-network-shuffle_2.11;2.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.11;2.2.0
+[debug] 	found org.apache.spark#spark-network-shuffle_2.11;2.2.0 in sbt-chain
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-network-shuffle_2.11;2.2.0 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-network-shuffle_2.11;2.2.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-network-shuffle_2.11;2.2.0 [compile->master(compile)]
@@ -149,7 +106,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-sql_2.11;2.2.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-sql_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-sql_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-sql_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-sql_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-sql_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-sql_2.11;2.2.0
@@ -158,7 +115,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-sql_2.11;2.2.0!spark-sql_2.11.pom(pom.original) (26ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-sql_2.11;2.2.0!spark-sql_2.11.pom(pom.original) (666ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-sql_2.11;2.2.0 in public
@@ -235,7 +192,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-tags_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-tags_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-tags_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-tags_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-tags_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-tags_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-tags_2.11;2.2.0
@@ -244,7 +201,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-tags_2.11;2.2.0!spark-tags_2.11.pom(pom.original) (26ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-tags_2.11;2.2.0!spark-tags_2.11.pom(pom.original) (1311ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-tags_2.11;2.2.0 in public
@@ -363,6 +320,17 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: xerces#xercesImpl;2.9.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: xerces#xercesImpl;2.9.1
+[debug] 	found xerces#xercesImpl;2.9.1 in sbt-chain
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: javolution#javolution;5.5.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: javolution#javolution;5.5.1
@@ -629,20 +597,8 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-hive_2.11;2.2.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-hive_2.11;2.2.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-hive_2.11;2.2.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-hive_2.11/2.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-hive_2.11;2.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-hive_2.11;2.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom (2.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-hive_2.11/2.2.0/spark-hive_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-hive_2.11;2.2.0!spark-hive_2.11.pom(pom.original) (27ms)
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
-[debug] 	found org.apache.spark#spark-hive_2.11;2.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-hive_2.11;2.2.0
+[debug] 	found org.apache.spark#spark-hive_2.11;2.2.0 in sbt-chain
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-hive_2.11;2.2.0 [compile->runtime]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-hive_2.11;2.2.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-hive_2.11;2.2.0 [compile->master]
@@ -656,20 +612,8 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-hive_2.11;2.2.0 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-catalyst_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-catalyst_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-catalyst_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-catalyst_2.11/2.2.0/ivys/ivy.xml
-[debug] 	local: no ivy file found for org.apache.spark#spark-catalyst_2.11;2.2.0
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom
-[debug] 	public: found md file for org.apache.spark#spark-catalyst_2.11;2.2.0
-[debug] 		=> https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom (2.2.0)
-[debug] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.11;2.2.0!spark-catalyst_2.11.pom(pom.original) (27ms)
-[debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
-[debug] 	found org.apache.spark#spark-catalyst_2.11;2.2.0 in public
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.11;2.2.0
+[debug] 	found org.apache.spark#spark-catalyst_2.11;2.2.0 in sbt-chain
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-catalyst_2.11;2.2.0 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-catalyst_2.11;2.2.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-catalyst_2.11;2.2.0 [compile->master(compile)]
@@ -922,7 +866,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-sketch_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-sketch_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-sketch_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-sketch_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-sketch_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-sketch_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-sketch_2.11;2.2.0
@@ -931,7 +875,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-sketch_2.11;2.2.0!spark-sketch_2.11.pom(pom.original) (25ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-sketch_2.11;2.2.0!spark-sketch_2.11.pom(pom.original) (975ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-sketch_2.11;2.2.0 in public
@@ -1352,7 +1296,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-unsafe_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-unsafe_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-unsafe_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-unsafe_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-unsafe_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-unsafe_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-unsafe_2.11;2.2.0
@@ -1361,7 +1305,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-unsafe_2.11;2.2.0!spark-unsafe_2.11.pom(pom.original) (70ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-unsafe_2.11;2.2.0!spark-unsafe_2.11.pom(pom.original) (1006ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-unsafe_2.11;2.2.0 in public
@@ -1430,7 +1374,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-core_2.11;2.2.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-core_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-core_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-core_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-core_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-core_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-core_2.11;2.2.0
@@ -1439,7 +1383,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-core_2.11;2.2.0!spark-core_2.11.pom(pom.original) (30ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-core_2.11;2.2.0!spark-core_2.11.pom(pom.original) (697ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-core_2.11;2.2.0 in public
@@ -1769,7 +1713,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-launcher_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-launcher_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-launcher_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-launcher_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-launcher_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-launcher_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-launcher_2.11;2.2.0
@@ -1778,7 +1722,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-launcher_2.11;2.2.0!spark-launcher_2.11.pom(pom.original) (34ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-launcher_2.11;2.2.0!spark-launcher_2.11.pom(pom.original) (1271ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-launcher_2.11;2.2.0 in public
@@ -1921,6 +1865,17 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.apache.thrift#libfb303;0.9.3 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.apache.thrift#libfb303;0.9.3
+[debug] 	found org.apache.thrift#libfb303;0.9.3 in sbt-chain
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.glassfish.hk2#osgi-resource-locator;1.0.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.glassfish.hk2#osgi-resource-locator;1.0.1
@@ -2045,7 +2000,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-network-common_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-network-common_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-network-common_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-network-common_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-network-common_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-network-common_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-network-common_2.11;2.2.0
@@ -2054,7 +2009,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-network-common_2.11;2.2.0!spark-network-common_2.11.pom(pom.original) (33ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-network-common_2.11;2.2.0!spark-network-common_2.11.pom(pom.original) (258ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-network-common_2.11;2.2.0 in public
@@ -2068,7 +2023,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-streaming_2.11;2.2.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-streaming_2.11;2.2.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-streaming_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-streaming_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-streaming_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-streaming_2.11;2.2.0
@@ -2077,7 +2032,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.11;2.2.0!spark-streaming_2.11.pom(pom.original) (27ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-streaming_2.11;2.2.0!spark-streaming_2.11.pom(pom.original) (716ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-streaming_2.11;2.2.0 in public
@@ -2129,6 +2084,17 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: mx4j#mx4j;3.0.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: mx4j#mx4j;3.0.2
+[debug] 	found mx4j#mx4j;3.0.2 in sbt-chain
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.scalanlp#breeze-macros_2.11;0.13.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze-macros_2.11;0.13.1
@@ -2176,7 +2142,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-mllib_2.11;2.2.0 [compile->default]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-mllib_2.11;2.2.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-mllib_2.11;2.2.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-mllib_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-mllib_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-mllib_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-mllib_2.11;2.2.0
@@ -2185,7 +2151,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.11;2.2.0!spark-mllib_2.11.pom(pom.original) (30ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.11;2.2.0!spark-mllib_2.11.pom(pom.original) (981ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-mllib_2.11;2.2.0 in public
@@ -2247,7 +2213,7 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.spark#spark-graphx_2.11;2.2.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-graphx_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.spark#spark-graphx_2.11;2.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] 		tried /home/jin/.ivy2/local/org.apache.spark/spark-graphx_2.11/2.2.0/ivys/ivy.xml
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.spark/spark-graphx_2.11/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.spark#spark-graphx_2.11;2.2.0
 [debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom
 [debug] 	public: found md file for org.apache.spark#spark-graphx_2.11;2.2.0
@@ -2256,7 +2222,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.11;2.2.0!spark-graphx_2.11.pom(pom.original) (27ms)
+[debug] 	[SUCCESSFUL ] org.apache.spark#spark-graphx_2.11;2.2.0!spark-graphx_2.11.pom(pom.original) (95ms)
 [debug] sbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent_2.11;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-parent_2.11;2.2.0
 [debug] 	found org.apache.spark#spark-graphx_2.11;2.2.0 in public
@@ -2531,6 +2497,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
@@ -3615,6 +3589,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
@@ -3751,6 +3733,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
@@ -4083,6 +4073,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
@@ -5166,6 +5164,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
@@ -5302,6 +5308,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
@@ -5638,6 +5652,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
@@ -6722,6 +6744,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
@@ -6858,6 +6888,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
@@ -7190,6 +7228,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
@@ -8273,6 +8319,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
@@ -8409,6 +8463,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
@@ -8741,6 +8803,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->compile]
@@ -9824,6 +9894,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->compile]
@@ -9960,6 +10038,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->compile]
@@ -10299,6 +10385,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
@@ -11383,6 +11477,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
@@ -11519,6 +11621,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
@@ -11853,6 +11963,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile-internal->compile]
@@ -12936,6 +13054,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile-internal->compile]
@@ -13072,6 +13198,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile-internal->compile]
@@ -13408,6 +13542,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
@@ -14492,6 +14634,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
@@ -14628,6 +14778,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
@@ -14960,6 +15118,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
@@ -16043,6 +16209,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
@@ -16179,6 +16353,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
@@ -16512,6 +16694,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime-internal->compile]
@@ -17595,6 +17785,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime-internal->compile]
@@ -17731,6 +17929,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime-internal->compile]
@@ -18068,6 +18274,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [compile->compile]
@@ -19152,6 +19366,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [compile->compile]
@@ -19288,6 +19510,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [compile->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [compile->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [compile->compile]
@@ -19620,6 +19850,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [runtime->compile]
@@ -20703,6 +20941,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [runtime->compile]
@@ -20839,6 +21085,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [runtime->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [runtime->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [runtime->compile]
@@ -21171,6 +21425,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test->compile]
@@ -22254,6 +22516,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test->compile]
@@ -22390,6 +22660,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test->compile]
@@ -22724,6 +23002,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.jersey.containers#jersey-container-servlet;2.22.2 [test-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->xerces#xercesImpl;2.9.1 [test-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->javolution#javolution;5.5.1 [test-internal->compile]
@@ -23807,6 +24093,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->aopalliance#aopalliance;1.0 [test-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->org.apache.thrift#libfb303;0.9.3 [test-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.glassfish.hk2#osgi-resource-locator;1.0.1 [test-internal->compile]
@@ -23943,6 +24237,14 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test-internal->compile(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->com.google.guava#guava;11.0.2 [test-internal->master]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->runtime(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->master(compile)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->runtime]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->compile]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->compile(*)]
+[debug] == resolving dependencies yelp#yelp$sources;0.1->mx4j#mx4j;3.0.2 [test-internal->master]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test-internal->compile]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test-internal->runtime(*)]
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scalanlp#breeze-macros_2.11;0.13.1 [test-internal->compile]
@@ -24122,283 +24424,133 @@
 [debug] == resolving dependencies yelp#yelp$sources;0.1->org.scala-lang#scala-reflect;2.11.8 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-common;2.6.5!hadoop-yarn-common.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-avatica;1.2.0-incubating!calcite-avatica.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-common;2.6.5!hadoop-mapreduce-client-common.jar(src)
-[debug] 	[NOT REQUIRED] com.jamesmurty.utils#java-xmlbuilder;1.0!java-xmlbuilder.jar(src)
-[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-rdbms;3.2.9!datanucleus-rdbms.jar(src)
-[debug] 	[NOT REQUIRED] commons-digester#commons-digester;1.8!commons-digester.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#chill_2.11;0.8.0!chill_2.11.jar(src)
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-hadoop;1.8.2!parquet-hadoop.jar(src)
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] no default ivy user dir defined: set to /home/jin/.ivy2
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/jin/.ivy2/cache
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (34ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] org.xerial.snappy#snappy-java;1.1.2.6!snappy-java.jar(src)
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] org.jpmml#pmml-model;1.2.15!pmml-model.jar(src)
-[debug] settings loaded (38ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.apache.avro#avro-ipc;1.7.7!avro-ipc.jar(src)
-[debug] 	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.51!bcprov-jdk15on.jar(src)
-[debug] 	[NOT REQUIRED] commons-configuration#commons-configuration;1.6!commons-configuration.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-sketch_2.11;2.2.0!spark-sketch_2.11.jar(src)
-[debug] settings loaded (38ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.6.5!hadoop-mapreduce-client-jobclient.jar(src)
-[debug] 	[NOT REQUIRED] javax.mail#mail;1.4.7!mail.jar(src)
-[debug] 	[NOT REQUIRED] net.sf.py4j#py4j;0.10.4!py4j.jar(src)
-[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;2.3.2!shapeless_2.11.jar(src)
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] net.razorvine#pyrolite;4.13!pyrolite.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib-local_2.11;2.2.0!spark-mllib-local_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-column;1.8.2!parquet-column.jar(src)
-[debug] 	[NOT REQUIRED] org.antlr#antlr4-runtime;4.5.3!antlr4-runtime.jar(src)
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.6.5!jackson-core.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-jackson_2.11;3.2.11!json4s-jackson_2.11.jar(src)
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.3!joda-time.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.6.5!hadoop-yarn-server-nodemanager.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.media#jersey-media-jaxb;2.22.2!jersey-media-jaxb.jar(src)
-[debug] settings loaded (40ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.16!jcl-over-slf4j.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-tags_2.11;2.2.0!spark-tags_2.11.jar(src)
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (41ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-i18n;2.0.0-M15!apacheds-i18n.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-core;1.2.0-incubating!calcite-core.jar(src)
-[debug] 	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.16!jul-to-slf4j.jar(src)
-[debug] 	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar(src)
-[debug] 	[NOT REQUIRED] jline#jline;0.9.94!jline.jar(src)
-[debug] 	[NOT REQUIRED] com.ning#compress-lzf;1.0.3!compress-lzf.jar(src)
-[debug] 	[NOT REQUIRED] org.spire-math#spire_2.11;0.13.0!spire_2.11.jar(src)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-core;3.1.2!metrics-core.jar(src)
-[debug] 	[NOT REQUIRED] commons-dbcp#commons-dbcp;1.4!commons-dbcp.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.6.5!jackson-annotations.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-xc;1.9.13!jackson-xc.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] com.github.rwl#jtransforms;2.4.0!jtransforms.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#parquet-hadoop-bundle;1.6.0!parquet-hadoop-bundle.jar(src)
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.16!slf4j-api.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-encoding;1.8.2!parquet-encoding.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-jackson;1.8.2!parquet-jackson.jar(src)
-[debug] 	[NOT REQUIRED] commons-collections#commons-collections;3.2.2!commons-collections.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#macro-compat_2.11;1.1.1!macro-compat_2.11.jar(src)
-[debug] 	[NOT REQUIRED] oro#oro;2.0.8!oro.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-shuffle_2.11;2.2.0!spark-network-shuffle_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-server;2.22.2!jersey-server.jar(src)
-[debug] 	[NOT REQUIRED] net.hydromatic#eigenbase-properties;1.1.5!eigenbase-properties.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-core;2.6.5!hadoop-mapreduce-client-core.jar(src)
-[debug] 	[NOT REQUIRED] org.tukaani#xz;1.0!xz.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.bundles.repackaged#jersey-guava;2.22.2!jersey-guava.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.2!httpclient.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scalap;2.11.8!scalap.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-sql_2.11;2.2.0!spark-sql_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.11;3.2.11!json4s-ast_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.antlr#stringtemplate;3.2.1!stringtemplate.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#javax.inject;2.4.0-b34!javax.inject.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.janino#commons-compiler;3.0.0!commons-compiler.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#aopalliance-repackaged;2.4.0-b34!aopalliance-repackaged.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.6.5!jackson-module-scala_2.11.jar(src)
-[debug] 	[NOT REQUIRED] net.iharder#base64;2.3.8!base64.jar(src)
-[debug] 	[NOT REQUIRED] org.antlr#ST4;4.0.4!ST4.jar(src)
-[debug] 	[NOT REQUIRED] commons-net#commons-net;2.2!commons-net.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-hdfs;2.6.5!hadoop-hdfs.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-api;2.4.0-b34!hk2-api.jar(src)
-[debug] 	[NOT REQUIRED] javax.ws.rs#javax.ws.rs-api;2.0.1!javax.ws.rs-api.jar(src)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.curator#curator-framework;2.6.0!curator-framework.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-app;2.6.5!hadoop-mapreduce-client-app.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.6.5!jackson-databind.jar(src)
-[debug] 	[NOT REQUIRED] net.jpountz.lz4#lz4;1.3.0!lz4.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.thrift#libthrift;0.9.3!libthrift.jar(src)
-[debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(src)
-[debug] 	[NOT REQUIRED] com.googlecode.javaewah#JavaEWAH;0.3.2!JavaEWAH.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-launcher_2.11;2.2.0!spark-launcher_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.jodd#jodd-core;3.5.2!jodd-core.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-api;2.6.5!hadoop-yarn-api.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-unsafe_2.11;2.2.0!spark-unsafe_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.4.0!ivy.jar(src)
-[debug] 	[NOT REQUIRED] commons-httpclient#commons-httpclient;3.1!commons-httpclient.jar(src)
-[debug] settings loaded (53ms)
-[debug] 	[NOT REQUIRED] org.spark-project.hive#hive-metastore;1.2.1.spark2!hive-metastore.jar(src)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (52ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-format;2.3.1!parquet-format.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-client;2.22.2!jersey-client.jar(src)
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-client;2.6.5!hadoop-client.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.zookeeper#zookeeper;3.4.6!zookeeper.jar(src)
-[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-crypto;1.0.0!commons-crypto.jar(src)
-[debug] 	[NOT REQUIRED] org.scalanlp#breeze_2.11;0.13.1!breeze_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.curator#curator-recipes;2.6.0!curator-recipes.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet;2.22.2!jersey-container-servlet.jar(src)
+[debug] 	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar(src)
+[debug] 	[NOT REQUIRED] com.jamesmurty.utils#java-xmlbuilder;1.0!java-xmlbuilder.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-crypto;1.0.0!commons-crypto.jar(src)
+[debug] 	[NOT REQUIRED] net.iharder#base64;2.3.8!base64.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-hadoop;1.8.2!parquet-hadoop.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar(src)
+[debug] 		tried /Users/kpinnipa/.ivy2/local/xerces/xercesImpl/2.9.1/srcs/xercesImpl-sources.jar
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-core;3.1.2!metrics-core.jar(src)
+[debug] 	[NOT REQUIRED] net.sf.py4j#py4j;0.10.4!py4j.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1-sources.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-hive_2.11;2.2.0!spark-hive_2.11.jar(src)
+[debug] no default ivy user dir defined: set to /Users/kpinnipa/.ivy2
+[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-xc;1.9.13!jackson-xc.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-catalyst_2.11;2.2.0!spark-catalyst_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib-local_2.11;2.2.0!spark-mllib-local_2.11.jar(src)
+[debug] no default ivy user dir defined: set to /Users/kpinnipa/.ivy2
+[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-avatica;1.2.0-incubating!calcite-avatica.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-launcher_2.11;2.2.0!spark-launcher_2.11.jar(src)
+[debug] no default ivy user dir defined: set to /Users/kpinnipa/.ivy2
+[debug] 	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.16!jul-to-slf4j.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-api;2.6.5!hadoop-yarn-api.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.6.5!jackson-core.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 	[NOT REQUIRED] commons-httpclient#commons-httpclient;3.1!commons-httpclient.jar(src)
+[debug] 	[NOT REQUIRED] com.ning#compress-lzf;1.0.3!compress-lzf.jar(src)
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.16!slf4j-api.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-client;2.22.2!jersey-client.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.6.5!jackson-annotations.jar(src)
+[debug] 	[NOT REQUIRED] commons-collections#commons-collections;3.2.2!commons-collections.jar(src)
+[debug] no default cache defined: set to /Users/kpinnipa/.ivy2/cache
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] 	[NOT REQUIRED] com.twitter#parquet-hadoop-bundle;1.6.0!parquet-hadoop-bundle.jar(src)
+[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-shuffle_2.11;2.2.0!spark-network-shuffle_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-encoding;1.8.2!parquet-encoding.jar(src)
 [debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar(src)
-[debug] 	[NOT REQUIRED] org.antlr#antlr-runtime;3.4!antlr-runtime.jar(src)
-[debug] 	[NOT REQUIRED] org.sonatype.sisu.inject#cglib;2.2.1-v20090111!cglib.jar(src)
-[debug] 	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar(src)
-[debug] 	[NOT REQUIRED] javolution#javolution;5.5.1!javolution.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-core;2.6.5!hadoop-mapreduce-client-core.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#macro-compat_2.11;1.1.1!macro-compat_2.11.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] 	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar(src)
-[debug] 	[NOT REQUIRED] org.jpmml#pmml-schema;1.2.15!pmml-schema.jar(src)
-[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-api-jdo;3.2.6!datanucleus-api-jdo.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty;3.9.9.Final!netty.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-common;2.6.5!hadoop-common.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.2!httpclient.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-server;2.22.2!jersey-server.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-jvm;3.1.2!metrics-jvm.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-auth;2.6.5!hadoop-auth.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.11;3.2.11!json4s-core_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.11;2.2.0!spark-core_2.11.jar(src)
-[debug] 	[NOT REQUIRED] javax.annotation#javax.annotation-api;1.2!javax.annotation-api.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-sql_2.11;2.2.0!spark-sql_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.bundles.repackaged#jersey-guava;2.22.2!jersey-guava.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-annotations;2.6.5!hadoop-annotations.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15!apacheds-kerberos-codec.jar(src)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar(src)
-[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet-core;2.22.2!jersey-container-servlet-core.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.janino#commons-compiler;3.0.0!commons-compiler.jar(src)
+[debug] no default cache defined: set to /Users/kpinnipa/.ivy2/cache
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] 	[NOT REQUIRED] org.scala-lang#scalap;2.11.8!scalap.jar(src)
+[debug] 	[NOT REQUIRED] net.razorvine#pyrolite;4.13!pyrolite.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-common;2.6.5!hadoop-yarn-server-common.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-common;1.8.2!parquet-common.jar(src)
-[debug] 	[NOT REQUIRED] com.google.inject#guice;3.0!guice.jar(src)
-[debug] 	[NOT REQUIRED] org.iq80.snappy#snappy;0.2!snappy.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#javax.inject;2.4.0-b34!javax.inject.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.avro#avro;1.7.7!avro.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] 	[NOT REQUIRED] org.antlr#antlr4-runtime;4.5.3!antlr4-runtime.jar(src)
 [debug] 	[NOT REQUIRED] commons-cli#commons-cli;1.2!commons-cli.jar(src)
-[debug] 	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(src)
-[debug] 	[NOT REQUIRED] javax.xml.stream#stax-api;1.0-2!stax-api.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-utils;2.4.0-b34!hk2-utils.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#aopalliance-repackaged;2.4.0-b34!aopalliance-repackaged.jar(src)
+[debug] 	[NOT REQUIRED] org.spire-math#spire-macros_2.11;0.13.0!spire-macros_2.11.jar(src)
+[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.3!joda-time.jar(src)
 [debug] 	[NOT REQUIRED] org.spark-project.hive#hive-exec;1.2.1.spark2!hive-exec.jar(src)
-[debug] 	[NOT REQUIRED] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.jettison#jettison;1.1!jettison.jar(src)
+[debug] 	[NOT REQUIRED] commons-net#commons-net;2.2!commons-net.jar(src)
+[debug] 	[NOT REQUIRED] xml-apis#xml-apis;1.3.04!xml-apis.jar(src)
+[debug] settings loaded (5ms)
+[debug] 	default cache: /Users/kpinnipa/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.media#jersey-media-jaxb;2.22.2!jersey-media-jaxb.jar(src)
 [debug] 	[NOT REQUIRED] aopalliance#aopalliance;1.0!aopalliance.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-linq4j;1.2.0-incubating!calcite-linq4j.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2#osgi-resource-locator;1.0.1!osgi-resource-locator.jar(src)
-[debug] 	[NOT REQUIRED] javax.transaction#jta;1.1!jta.jar(src)
-[debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.2.4!gson.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-client;2.6.5!hadoop-yarn-client.jar(src)
-[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-core;3.2.10!datanucleus-core.jar(src)
-[debug] 	[NOT REQUIRED] org.objenesis#objenesis;2.1!objenesis.jar(src)
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar(src)
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-tags_2.11;2.2.0!spark-tags_2.11.jar(src)
+[debug] 		tried /Users/kpinnipa/.ivy2/local/org.apache.thrift/libfb303/0.9.3/srcs/libfb303-sources.jar
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.6.5!jackson-databind.jar(src)
+[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty-util;6.1.26!jetty-util.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-i18n;2.0.0-M15!apacheds-i18n.jar(src)
+[debug] 	[NOT REQUIRED] com.googlecode.javaewah#JavaEWAH;0.3.2!JavaEWAH.jar(src)
+[debug] 	[NOT REQUIRED] com.github.fommil.netlib#core;1.1.2!core.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-jackson;1.8.2!parquet-jackson.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-unsafe_2.11;2.2.0!spark-unsafe_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.curator#curator-client;2.6.0!curator-client.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar(src)
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.spark-project.hive#hive-metastore;1.2.1.spark2!hive-metastore.jar(src)
+[debug] no default cache defined: set to /Users/kpinnipa/.ivy2/cache
+[debug] 	[NOT REQUIRED] com.univocity#univocity-parsers;2.2.1!univocity-parsers.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] 	[NOT REQUIRED] oro#oro;2.0.8!oro.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-hdfs;2.6.5!hadoop-hdfs.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.zookeeper#zookeeper;3.4.6!zookeeper.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.curator#curator-framework;2.6.0!curator-framework.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.curator#curator-recipes;2.6.0!curator-recipes.jar(src)
+[debug] 	[NOT REQUIRED] net.hydromatic#eigenbase-properties;1.1.5!eigenbase-properties.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.11;3.2.11!json4s-ast_2.11.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] 	[NOT REQUIRED] org.apache.thrift#libthrift;0.9.3!libthrift.jar(src)
+[debug] 	[NOT REQUIRED] org.sonatype.sisu.inject#cglib;2.2.1-v20090111!cglib.jar(src)
+[debug] 	[NOT REQUIRED] org.antlr#stringtemplate;3.2.1!stringtemplate.jar(src)
+[debug] 	[NOT REQUIRED] net.sf.opencsv#opencsv;2.3!opencsv.jar(src)
+[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-api-jdo;3.2.6!datanucleus-api-jdo.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.8!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#machinist_2.11;0.6.1!machinist_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.6.5!jackson-module-scala_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.11;2.2.0!spark-core_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.tukaani#xz;1.0!xz.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.5!commons-lang3.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.6.5!hadoop-mapreduce-client-shuffle.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-math3;3.4.1!commons-math3.jar(src)
+[debug] 	[NOT REQUIRED] org.antlr#ST4;4.0.4!ST4.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-format;2.3.1!parquet-format.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-all;4.0.43.Final!netty-all.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.xbean#xbean-asm5-shaded;4.4!xbean-asm5-shaded.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.directory.api#api-util;1.0.0-M20!api-util.jar(src)
-[debug] 	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni-all;1.8!leveldbjni-all.jar(src)
-[debug] 	[NOT REQUIRED] org.roaringbitmap#RoaringBitmap;0.5.11!RoaringBitmap.jar(src)
-[debug] 	[NOT REQUIRED] commons-pool#commons-pool;1.5.4!commons-pool.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#chill-java;0.8.0!chill-java.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-locator;2.4.0-b34!hk2-locator.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-common_2.11;2.2.0!spark-network-common_2.11.jar(src)
-[debug] including url: jar:file:/home/jin/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] com.esotericsoftware#minlog;1.3.0!minlog.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming_2.11;2.2.0!spark-streaming_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib_2.11;2.2.0!spark-mllib_2.11.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.6.5!jackson-module-paranamer.jar(src)
-[debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
-[debug] 	[NOT REQUIRED] javax.activation#activation;1.1.1!activation.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-compress;1.4.1!commons-compress.jar(src)
-[debug] 	[NOT REQUIRED] com.google.guava#guava;11.0.2!guava.jar(src)
-[debug] settings loaded (64ms)
-[debug] 	default cache: /home/jin/.ivy2/cache
+[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-api;2.4.0-b34!hk2-api.jar(src)
+[debug] settings loaded (12ms)
+[debug] 	default cache: /Users/kpinnipa/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
@@ -24406,50 +24558,173 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] 	[NOT REQUIRED] com.esotericsoftware#kryo-shaded;3.0.3!kryo-shaded.jar(src)
-[debug] 	[NOT REQUIRED] org.scalanlp#breeze-macros_2.11;0.13.1!breeze-macros_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.htrace#htrace-core;3.0.4!htrace-core.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar(src)
-[debug] 	[NOT REQUIRED] javax.jdo#jdo-api;3.0.1!jdo-api.jar(src)
-[debug] 	[NOT REQUIRED] net.sf.opencsv#opencsv;2.3!opencsv.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-hive_2.11;2.2.0!spark-hive_2.11.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty;3.9.9.Final!netty.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#chill_2.11;0.8.0!chill_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni-all;1.8!leveldbjni-all.jar(src)
+[debug] 	[NOT REQUIRED] javax.ws.rs#javax.ws.rs-api;2.0.1!javax.ws.rs-api.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.11;3.2.11!json4s-core_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.javassist#javassist;3.18.1-GA!javassist.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-app;2.6.5!hadoop-mapreduce-client-app.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.janino#janino;3.0.0!janino.jar(src)
+[debug] 	[NOT REQUIRED] org.antlr#antlr-runtime;3.4!antlr-runtime.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15!apacheds-kerberos-codec.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
+[debug] 	[NOT REQUIRED] net.jpountz.lz4#lz4;1.3.0!lz4.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.directory.api#api-asn1-api;1.0.0-M20!api-asn1-api.jar(src)
+[debug] 	[NOT REQUIRED] org.jpmml#pmml-schema;1.2.15!pmml-schema.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-common;1.8.2!parquet-common.jar(src)
+[debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(src)
+[debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-jaxrs;1.9.13!jackson-jaxrs.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-common;2.6.5!hadoop-common.jar(src)
+[debug] 	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(src)
+[debug] 	[NOT REQUIRED] org.jodd#jodd-core;3.5.2!jodd-core.jar(src)
+[debug] 	[NOT REQUIRED] net.java.dev.jets3t#jets3t;0.9.3!jets3t.jar(src)
+[debug] 	[NOT REQUIRED] javax.annotation#javax.annotation-api;1.2!javax.annotation-api.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.6.5!hadoop-mapreduce-client-shuffle.jar(src)
+[debug] 	[NOT REQUIRED] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar(src)
+[debug] 	[NOT REQUIRED] commons-beanutils#commons-beanutils;1.7.0!commons-beanutils.jar(src)
+[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.xbean#xbean-asm5-shaded;4.4!xbean-asm5-shaded.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.jettison#jettison;1.1!jettison.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.4.0!ivy.jar(src)
+[debug] 	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar(src)
+[debug] 	[NOT REQUIRED] com.google.inject#guice;3.0!guice.jar(src)
+[debug] including url: jar:file:/Users/kpinnipa/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] 	[NOT REQUIRED] org.roaringbitmap#RoaringBitmap;0.5.11!RoaringBitmap.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-linq4j;1.2.0-incubating!calcite-linq4j.jar(src)
+[debug] 	[NOT REQUIRED] javax.xml.stream#stax-api;1.0-2!stax-api.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-auth;2.6.5!hadoop-auth.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#chill-java;0.8.0!chill-java.jar(src)
+[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-rdbms;3.2.9!datanucleus-rdbms.jar(src)
+[debug] 	[NOT REQUIRED] javax.transaction#jta;1.1!jta.jar(src)
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar(src)
+[debug] settings loaded (16ms)
+[debug] 	default cache: /Users/kpinnipa/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-common_2.11;2.2.0!spark-network-common_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-client;2.6.5!hadoop-client.jar(src)
+[debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.2.4!gson.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.4!httpcore.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming_2.11;2.2.0!spark-streaming_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.51!bcprov-jdk15on.jar(src)
+[debug] 	[NOT REQUIRED] org.datanucleus#datanucleus-core;3.2.10!datanucleus-core.jar(src)
+[debug] 	[NOT REQUIRED] org.scalanlp#breeze_2.11;0.13.1!breeze_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-common;2.6.5!hadoop-yarn-common.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.6.5!jackson-module-paranamer.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-sketch_2.11;2.2.0!spark-sketch_2.11.jar(src)
+[debug] 	[NOT REQUIRED] commons-dbcp#commons-dbcp;1.4!commons-dbcp.jar(src)
+[debug] 	[NOT REQUIRED] javax.activation#activation;1.1.1!activation.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet-core;2.22.2!jersey-container-servlet-core.jar(src)
+[debug] 	[NOT REQUIRED] javax.mail#mail;1.4.7!mail.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.google.guava#guava;11.0.2!guava.jar(src)
+[debug] 	[NOT REQUIRED] org.iq80.snappy#snappy;0.2!snappy.jar(src)
+[debug] 	[NOT REQUIRED] com.github.rwl#jtransforms;2.4.0!jtransforms.jar(src)
+[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;2.3.2!shapeless_2.11.jar(src)
+[debug] 		tried /Users/kpinnipa/.ivy2/local/mx4j/mx4j/3.0.2/srcs/mx4j-sources.jar
+[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-utils;2.4.0-b34!hk2-utils.jar(src)
+[debug] 	[NOT REQUIRED] commons-digester#commons-digester;1.8!commons-digester.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.parquet#parquet-column;1.8.2!parquet-column.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[debug] 	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar(src)
+[debug] 	[NOT REQUIRED] org.xerial.snappy#snappy-java;1.1.2.6!snappy-java.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-jackson_2.11;3.2.11!json4s-jackson_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.jpmml#pmml-model;1.2.15!pmml-model.jar(src)
 [debug] 	[NOT REQUIRED] com.clearspring.analytics#stream;2.7.0!stream.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#machinist_2.11;0.6.1!machinist_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-catalyst_2.11;2.2.0!spark-catalyst_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.6.5!hadoop-yarn-server-nodemanager.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.avro#avro-ipc;1.7.7!avro-ipc.jar(src)
+[debug] 	[NOT REQUIRED] com.esotericsoftware#minlog;1.3.0!minlog.jar(src)
+[debug] 	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.16!jcl-over-slf4j.jar(src)
+[debug] 	[NOT REQUIRED] commons-configuration#commons-configuration;1.6!commons-configuration.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib_2.11;2.2.0!spark-mllib_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.calcite#calcite-core;1.2.0-incubating!calcite-core.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.6.5!hadoop-mapreduce-client-jobclient.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;0.9.94!jline.jar(src)
+[debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
+[debug] 	[NOT REQUIRED] org.spire-math#spire_2.11;0.13.0!spire_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-compress;1.4.1!commons-compress.jar(src)
+[debug] 	[NOT REQUIRED] com.esotericsoftware#kryo-shaded;3.0.3!kryo-shaded.jar(src)
+[debug] 	[NOT REQUIRED] org.htrace#htrace-core;3.0.4!htrace-core.jar(src)
+[debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.2.2!jaxb-api.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.spark#spark-graphx_2.11;2.2.0!spark-graphx_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-common;2.22.2!jersey-common.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.avro#avro;1.7.7!avro.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-log4j12;1.7.16!slf4j-log4j12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.2.2!jaxb-api.jar(src)
-[debug] 	[NOT REQUIRED] org.javassist#javassist;3.18.1-GA!javassist.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.janino#janino;3.0.0!janino.jar(src)
-[debug] 	[NOT REQUIRED] com.github.fommil.netlib#core;1.1.2!core.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
-[debug] 	[NOT REQUIRED] net.java.dev.jets3t#jets3t;0.9.3!jets3t.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.directory.api#api-asn1-api;1.0.0-M20!api-asn1-api.jar(src)
-[debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.curator#curator-client;2.6.0!curator-client.jar(src)
-[debug] 	[NOT REQUIRED] commons-beanutils#commons-beanutils;1.7.0!commons-beanutils.jar(src)
-[debug] 	[NOT REQUIRED] xml-apis#xml-apis;1.3.04!xml-apis.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-jaxrs;1.9.13!jackson-jaxrs.jar(src)
-[debug] 	[NOT REQUIRED] com.univocity#univocity-parsers;2.2.1!univocity-parsers.jar(src)
-[debug] 	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar(src)
-[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
-[debug] 	[NOT REQUIRED] org.spire-math#spire-macros_2.11;0.13.0!spire-macros_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty-util;6.1.26!jetty-util.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.4!httpcore.jar(src)
-[debug] :: resolution report :: resolve 10911ms :: artifacts dl 121ms
-[debug] 	report for yelp#yelp$sources;0.1 compile produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-compile.xml
-[debug] 	report for yelp#yelp$sources;0.1 runtime produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-runtime.xml
-[debug] 	report for yelp#yelp$sources;0.1 test produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-test.xml
-[debug] 	report for yelp#yelp$sources;0.1 provided produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-provided.xml
-[debug] 	report for yelp#yelp$sources;0.1 optional produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-optional.xml
-[debug] 	report for yelp#yelp$sources;0.1 compile-internal produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-compile-internal.xml
-[debug] 	report for yelp#yelp$sources;0.1 runtime-internal produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-runtime-internal.xml
-[debug] 	report for yelp#yelp$sources;0.1 test-internal produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-test-internal.xml
-[debug] 	report for yelp#yelp$sources;0.1 plugin produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-plugin.xml
-[debug] 	report for yelp#yelp$sources;0.1 pom produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-pom.xml
-[debug] 	report for yelp#yelp$sources;0.1 scala-tool produced in /home/jin/calpoly/CSC369/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-scala-tool.xml
-[debug] 	resolve done (10911ms resolve - 121ms download)
+[debug] CLIENT ERROR:  url=https://repo1.maven.org/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1-sources.jar
+[debug] 		tried /Users/kpinnipa/.sbt/preloaded/xerces/xercesImpl/2.9.1/srcs/xercesImpl-sources.jar
+[debug] 		tried file:////Users/kpinnipa/.sbt/preloaded/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1-sources.jar
+[debug] 		tried https://repository.apache.org/snapshots/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1-sources.jar
+[debug] CLIENT ERROR:  url=https://repo1.maven.org/maven2/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[debug] CLIENT ERROR:  url=https://repo1.maven.org/maven2/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[debug] 		tried /Users/kpinnipa/.sbt/preloaded/org.apache.thrift/libfb303/0.9.3/srcs/libfb303-sources.jar
+[debug] 		tried /Users/kpinnipa/.sbt/preloaded/mx4j/mx4j/3.0.2/srcs/mx4j-sources.jar
+[debug] 		tried file:////Users/kpinnipa/.sbt/preloaded/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[debug] 		tried file:////Users/kpinnipa/.sbt/preloaded/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[debug] 		tried https://repository.apache.org/snapshots/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[debug] 		tried https://repository.apache.org/snapshots/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/snapshots/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[warn] 	Detected merged artifact: [FAILED     ] mx4j#mx4j;3.0.2!mx4j.jar(src):  (0ms).
+[warn] ==== local: tried
+[warn] ==== public: tried
+[warn] ==== local-preloaded-ivy: tried
+[warn]   /Users/kpinnipa/.sbt/preloaded/mx4j/mx4j/3.0.2/srcs/mx4j-sources.jar
+[warn] ==== local-preloaded: tried
+[warn]   file:////Users/kpinnipa/.sbt/preloaded/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[warn] ==== apache-snapshots: tried
+[warn]   https://repository.apache.org/snapshots/mx4j/mx4j/3.0.2/mx4j-3.0.2-sources.jar
+[debug] 	[NOT REQUIRED] org.scalanlp#breeze-macros_2.11;0.13.1!breeze-macros_2.11.jar(src)
+[debug] 	[NOT REQUIRED] javax.jdo#jdo-api;3.0.1!jdo-api.jar(src)
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/snapshots/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1-sources.jar
+[warn] 	Detected merged artifact: [FAILED     ] xerces#xercesImpl;2.9.1!xercesImpl.jar(src):  (0ms).
+[warn] ==== local: tried
+[warn] ==== public: tried
+[warn] ==== local-preloaded-ivy: tried
+[warn] ==== local-preloaded: tried
+[warn] ==== apache-snapshots: tried
+[debug] 	[NOT REQUIRED] javolution#javolution;5.5.1!javolution.jar(src)
+[debug] CLIENT ERROR: Not Found url=https://repository.apache.org/snapshots/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[warn] 	Detected merged artifact: [FAILED     ] org.apache.thrift#libfb303;0.9.3!libfb303.jar(src):  (0ms).
+[warn] ==== local: tried
+[warn] ==== public: tried
+[warn] ==== local-preloaded-ivy: tried
+[warn]   /Users/kpinnipa/.sbt/preloaded/org.apache.thrift/libfb303/0.9.3/srcs/libfb303-sources.jar
+[warn] ==== local-preloaded: tried
+[warn]   file:////Users/kpinnipa/.sbt/preloaded/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[warn] ==== apache-snapshots: tried
+[warn]   https://repository.apache.org/snapshots/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3-sources.jar
+[debug] 	[NOT REQUIRED] org.glassfish.hk2#osgi-resource-locator;1.0.1!osgi-resource-locator.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-client;2.6.5!hadoop-yarn-client.jar(src)
+[debug] 	[NOT REQUIRED] org.objenesis#objenesis;2.1!objenesis.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-math3;3.4.1!commons-math3.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.directory.api#api-util;1.0.0-M20!api-util.jar(src)
+[debug] 	[NOT REQUIRED] commons-pool#commons-pool;1.5.4!commons-pool.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-locator;2.4.0-b34!hk2-locator.jar(src)
+[debug] :: resolution report :: resolve 13543ms :: artifacts dl 881ms
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	::              FAILED DOWNLOADS            ::
+[warn] 	:: ^ see resolution messages for details  ^ ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	:: xerces#xercesImpl;2.9.1!xercesImpl.jar(src)
+[warn] 	:: org.apache.thrift#libfb303;0.9.3!libfb303.jar(src)
+[warn] 	:: mx4j#mx4j;3.0.2!mx4j.jar(src)
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[debug] 	report for yelp#yelp$sources;0.1 compile produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-compile.xml
+[debug] 	report for yelp#yelp$sources;0.1 runtime produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-runtime.xml
+[debug] 	report for yelp#yelp$sources;0.1 test produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-test.xml
+[debug] 	report for yelp#yelp$sources;0.1 provided produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-provided.xml
+[debug] 	report for yelp#yelp$sources;0.1 optional produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-optional.xml
+[debug] 	report for yelp#yelp$sources;0.1 compile-internal produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-compile-internal.xml
+[debug] 	report for yelp#yelp$sources;0.1 runtime-internal produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-runtime-internal.xml
+[debug] 	report for yelp#yelp$sources;0.1 test-internal produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-test-internal.xml
+[debug] 	report for yelp#yelp$sources;0.1 plugin produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-plugin.xml
+[debug] 	report for yelp#yelp$sources;0.1 pom produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-pom.xml
+[debug] 	report for yelp#yelp$sources;0.1 scala-tool produced in /Users/kpinnipa/Desktop/yelp-senti/target/scala-2.11/resolution-cache/reports/yelp-yelp$sources-scala-tool.xml
+[debug] 	resolve done (13543ms resolve - 881ms download)
