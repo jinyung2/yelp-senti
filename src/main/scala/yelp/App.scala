@@ -1,11 +1,13 @@
 package yelp
 
 import org.apache.spark.SparkContext._
+
 import scala.io._
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd._
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
+
 import scala.collection._
 
 object App {
@@ -58,8 +60,10 @@ object App {
     val conf = new SparkConf().setAppName("NameOfApp")
       .setMaster("local[4]")
     val sc = new SparkContext(conf)
-    val reviewsAndTFs = mutable.Map[Int,Array[(String,Int)]]() // review IDs + term frequencies
+    val reviewsAndTFs = mutable.Map[Int,Array[(String,Double)]]() // review IDs + term frequencies
     val documentFreq = mutable.Map[String,Int]() // df of unique words across reviews
+    val inverseDocumentFreq = mutable.Map[String,Double]() // idf of unique words across reviews
+    val tfidfMap = mutable.Map[(String,Int),Double]() //(term, docID) -> tf-idf
 
     val reviews = sc.textFile(TEST_INPUT)
       .map(_.split(", ", 2))
@@ -72,7 +76,8 @@ object App {
 
     var id : Int = 0 // get term frequencies
     reviews.collect().foreach(x => {
-      val temp = sc.parallelize(x.getWordVec()).map(y => (y, 1)).reduceByKey((x, y) => x + y).collect();
+      val temp = sc.parallelize(x.getWordVec()).map(y => (y, 1)).reduceByKey((x, y) => x + y)
+        .map(z => (z._1,1.0*z._2/x.getWordVec().length)).collect()
       reviewsAndTFs += (id -> temp)
       id+=1
     })
@@ -86,7 +91,23 @@ object App {
       })
     })
 
+    //calculate idf for each unique term using df
+    // idf(t) = log(N/(df + 1))
+    documentFreq.foreach(x => {
+      val idf = Math.log10(documentFreq.size/(x._2+1))/Math.log10(2.0)
+      inverseDocumentFreq += (x._1 -> idf)
+    })
+
+    //calculate the td-idf for each term for each document (review)
+    //tf-idf(t, d) = tf(t, d) * log(N/(df + 1)) = tf(t, d) * idf(t)
+    reviewsAndTFs.foreach(x => x._2.foreach(y => {
+      val tfidf = y._2*inverseDocumentFreq.getOrElse(y._1,0.0);
+      tfidfMap += ((y._1,x._1) -> tfidf)
+    }))
+
     //reviewsAndTFs.foreach(x => println(x._1 + " " + x._2.foreach(print)))
-    documentFreq.foreach(println)
+    //documentFreq.foreach(println)
+    //inverseDocumentFreq.foreach(println)
+    tfidfMap.foreach(println)
   }
 }
