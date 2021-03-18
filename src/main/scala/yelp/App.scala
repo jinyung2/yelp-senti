@@ -73,21 +73,21 @@ object App {
           .filter(x => x != "")
           .filterNot(STOP_WORDS.contains(_))
           .map(word => (word, 1))
-        sc.parallelize(temp)
+        (star, sc.parallelize(temp)
           .reduceByKey((x, y) => x + y)
           .map { case (word, tf) => (word, (tf.toDouble / temp.length)) }
-          .map(x => (x._1, x._2 * idfMap.getOrElse(x._1, 0.0)))
+          .map(x => (x._1, x._2 * idfMap.getOrElse(x._1, 0.0))))
       }}
 
     println("Running KNN with K = 3:\n")
     testInput.foreach(testReview => {
       var topN: List[(Double, Int)] = List.empty
       trainingtfidf.foreach(train => {
-        val C = train.map(_._1._1).subtract(testReview.map(_._1))
+        val C = train.map(_._1._1).subtract(testReview._2.map(_._1))
           .map(x => (x, 0.0))
-        val D = testReview.map(_._1).subtract(train.map(_._1._1))
+        val D = testReview._2.map(_._1).subtract(train.map(_._1._1))
           .map(x => (x, 0.0))
-        val A = testReview.union(C).map(_._2).collect()
+        val A = testReview._2.union(C).map(_._2).collect()
         val B = train.map(_._1).union(D).map(_._2).collect()
         val cosSimVal = cosineSimilarity(A, B)
         val star = train.map(_._2).collect()(0)
@@ -95,7 +95,7 @@ object App {
         })
       val total = topN.sortBy(_._1).take(3).map(_._2).sum
       val average = total / 3.0
-      printf("TOTAL: %4d\nAVERAGE: %.3f\n", total, average)
+      printf("TOTAL: %4d\nAVERAGE: %.3f\nACTUAL:  %d\n", total, average, testReview._1)
       print("INPUTTED REVIEW IS: ")
       if (average >= 3.5)
         println("POSITIVE\n")
