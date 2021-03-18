@@ -39,6 +39,10 @@ Polina: 3/17
 Contributed towards the creationg ot eh slide deck, going over all the aspects of the project and collecting the appropriate data from each team member that participated, as well as analyzing the results for how each part was completed and how this affected the reviews being collected.
 Time Spent: 3 hours
 
+Polina: 3/18
+Continued to work on the project slides as well as the project report document before submission. Reviews over the information and added some more clarifications on the algorthims and data analysis part. 
+Time Spent: 2 hours
+
 Nithya: 3/12
 Created skeletal version of slides and researched td-idf methods.
 Time Spent: 1 hour
