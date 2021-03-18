@@ -6,6 +6,10 @@ Jin : 3/12
 Pre-processed data some more, no longer JSON files, instead each line is comma separated by STARS, REVIEW_TEXT. This saves some additional file space on and makes it easier to deal with the data in scala code since scala does not have a native way of handling JSON files.
 Time Spent: 1 hour
 
+Jin : 3/14
+Researched TF-IDF and KNN methods for use in project. Put together a document for brainstorming ideas and discussing general project overview.
+Time Spent: 2 hour
+
 Jin : 3/17
 Refactored code from App.scala main driver into a separate class. Fiddled with serializable properties in scala to allow sparkContext to be used in other classes. Created a case class within the tfidf class to encapsulate some data for a specific review.
 TF-IDF vector with (word, weight)  for specific reviews is implemented and working.
