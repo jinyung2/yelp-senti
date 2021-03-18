@@ -1,0 +1,20 @@
+Jin : 3/11
+Curated data to be used in project by writing a script to perform removal of extraneous attributes in JSON file. Further trimmed file to fit size limits of usage on ambari-node5 server. Removed review text with length < 1000 to guarantee only larger reviews will be analyzed (better word vector outcome).
+Time Spent: 2 hours
+
+Jin : 3/12
+Pre-processed data some more, no longer JSON files, instead each line is comma separated by STARS, REVIEW_TEXT. This saves some additional file space on and makes it easier to deal with the data in scala code since scala does not have a native way of handling JSON files.
+Time Spent: 1 hour
+
+Jin : 3/17
+Refactored code from App.scala main driver into a separate class. Fiddled with serializable properties in scala to allow sparkContext to be used in other classes. Created a case class within the tfidf class to encapsulate some data for a specific review.
+TF-IDF vector with (word, weight)  for specific reviews is implemented and working.
+Time Spent: 5 hours
+
+Kiran : 3/16
+Got stop word data from online source. Processed data to remove stop words from reviews.
+Time Spent: 1 hour
+
+Kiran : 3/17
+Met with team to discuss next steps. Researched tf-idf and associated formulas. Created maps for term frequency, document frequency, inverse document frequency, and tf-idf values.
+Time spent: 4 hours
