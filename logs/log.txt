@@ -15,6 +15,10 @@ Refactored code from App.scala main driver into a separate class. Fiddled with s
 TF-IDF vector with (word, weight)  for specific reviews is implemented and working.
 Time Spent: 5 hours
 
+Jin : 3/18
+Integrated Nithya's cosine similarity and KNN into our existing code base.
+Time Spent: 6 hours
+
 Kiran : 3/16
 Got stop word data from online source. Processed data to remove stop words from reviews.
 Time Spent: 1 hour

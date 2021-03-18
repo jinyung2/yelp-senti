@@ -3,6 +3,10 @@ package yelp
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
+import yelp.CosineSimilarity._
+
+import scala.collection.mutable.TreeSet
+import scala.collection.mutable
 
 object App {
 
@@ -44,43 +48,58 @@ object App {
 
     val tfidf = new TfIdf with Serializable;
 
-    val training_set = sc.textFile(TEST_INPUT)
+    val trainingSet = sc.textFile(TEST_INPUT)
 
-    tfidf.train(training_set)
+    tfidf.train(trainingSet)
     
     // for some reason, the idf map only works when you get it like this first
     val idfMap = tfidf.getIDF;
     // printing word at tf-idf of each word in reviews array
-    tfidf.getReviews.foreach(review =>
+    val trainingtfidf = tfidf.getReviews.map(review =>
       sc.parallelize(review.getWordVec())
-        .map{ case (word, tf) => {(word, tf * idfMap.getOrElse(word, 0.0))}}
-        .collect().foreach(println)
+        .map{ case (word, tf) => ((word, tf * idfMap.getOrElse(word, 0.0)))}
+        .map(x => (x, review.getStar()))
     )
-    
+
     // cosine similarity
+    val testInput = sc.textFile(TRAINING_SET)
+      .map(_.split(", ", 2))
+      .map(x => (x(0).trim.toInt, x(1)))
+      .collect()
+      .map { case (star, text) => {
+        val temp = text
+          .replaceAll("[^a-zA-Z ]", "")
+          .toLowerCase()
+          .split(" ")
+          .filter(x => x != "")
+          .filterNot(STOP_WORDS.contains(_))
+          .map(word => (word, 1))
+        sc.parallelize(temp)
+          .reduceByKey((x, y) => x + y)
+          .map { case (word, tf) => (word, (tf.toDouble / temp.length)) }
+          .map(x => (x._1, x._2 * idfMap.getOrElse(x._1, 0.0)))
+      }}
 
-    // vectorize tfidf
-    // get count of total words over all documents
-    val total_words = tfidf.getDF.size
-    // make a word map. word to num to mark index in array
-    val wordMap = mutable.Map[String,Int]() // word -> index (a value between 0 and the total num of words)
-    val docVectorMap = mutable.Map[Int,Array[Double]]() // docId -> tfidf values if word @ index is in doc
-    documentFreq.keySet.foreach(word =>{
-      wordMap put (word, IndexFactory.create)
-    })
-    tfidfMap.foreach({case((word, doc), tfidf) => {
-      docVectorMap.get(doc) match {
-        case None => {
-          var arr = Array.fill[Double](total_words)(0) // each document starts with [0 * total words]
-          arr(wordMap.get(word).get) = tfidf // if a word is in the document, the value will be the tfidf of word in doc
-          docVectorMap put (doc, arr)
-        }
-        case Some(arr) => {
-          arr(wordMap.get(word).get) = tfidf
-        }
-      }
-    }})
 
-    docVectorMap.foreach({case (k, v) => println(k, "[", v.mkString(" "), "]")})
+    testInput.foreach(testReview => {
+      var topN: List[(Double, Int)] = List.empty
+      trainingtfidf.foreach(train => {
+        val C = train.map(_._1._1).subtract(testReview.map(_._1))
+          .map(x => (x, 0.0))
+        val D = testReview.map(_._1).subtract(train.map(_._1._1))
+          .map(x => (x, 0.0))
+        val A = testReview.union(C).map(_._2).collect()
+        val B = train.map(_._1).union(D).map(_._2).collect()
+        val cosSimVal = cosineSimilarity(A, B)
+        val star = train.map(_._2).collect()(0)
+        topN = (cosSimVal, star)::topN
+        })
+      val total = topN.sortBy(_._1).take(3).map(_._2).sum
+      printf("TOTAL: %d\n", total)
+      if ((total / 3.0) >= 3.5)
+        println("POSITIVE")
+      else
+        println("NEGATIVE")
+      })
   }
 }

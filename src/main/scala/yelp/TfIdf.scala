@@ -10,7 +10,7 @@ class TfIdf {
   private val documentFreq = mutable.Map[String, Int]() // df of unique words across reviews
   private val inverseDocumentFreq = mutable.Map[String, Double]() // idf of unique words across reviews
 
-  case class Review(star: Int, document: String) extends Serializable {
+  class Review(star: Int, document: String) extends Serializable {
     val temp = document
       .replaceAll("[^a-zA-Z ]", "")
       .toLowerCase()
@@ -20,7 +20,7 @@ class TfIdf {
       .map(word => (word, 1))
 
     private val wordVecTF = sc.parallelize(temp)
-      .reduceByKey((x, y) => x + 1)
+      .reduceByKey((x, y) => x + y)
       .map { case (word, tf) => (word, tf.toDouble / temp.length) } // tf is now weighted based on total # of words
       .collect() // performs the TF
 
@@ -28,6 +28,7 @@ class TfIdf {
 
     def getWordVec() = wordVecTF
 
+    def getStar() = star
     // returns the tfidf weighted RDD
   }
 
@@ -36,7 +37,7 @@ class TfIdf {
     trainingSetReviews = reviews
       .map(_.split(", ", 2))
       .map(x => (x(0).trim.toInt, x(1)))
-      .map { case (star, text) => Review(star, text)}
+      .map { case (star, text) => new Review(star, text)}
       .collect()
 
     // populate the document freq
