@@ -60,7 +60,6 @@ object App {
         .map{ case (word, tf) => ((word, tf * idfMap.getOrElse(word, 0.0)))}
         .map(x => (x, review.getStar()))
     )
-
     // cosine similarity
     val testInput = sc.textFile(TRAINING_SET)
       .map(_.split(", ", 2))
@@ -80,7 +79,7 @@ object App {
           .map(x => (x._1, x._2 * idfMap.getOrElse(x._1, 0.0)))
       }}
 
-
+    println("Running KNN with K = 3:\n")
     testInput.foreach(testReview => {
       var topN: List[(Double, Int)] = List.empty
       trainingtfidf.foreach(train => {
@@ -95,11 +94,13 @@ object App {
         topN = (cosSimVal, star)::topN
         })
       val total = topN.sortBy(_._1).take(3).map(_._2).sum
-      printf("TOTAL: %d\n", total)
-      if ((total / 3.0) >= 3.5)
-        println("POSITIVE")
+      val average = total / 3.0
+      printf("TOTAL: %4d\nAVERAGE: %.3f\n", total, average)
+      print("INPUTTED REVIEW IS: ")
+      if (average >= 3.5)
+        println("POSITIVE\n")
       else
-        println("NEGATIVE")
+        println("NEGATIVE\n")
       })
   }
 }
