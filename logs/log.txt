@@ -22,3 +22,11 @@ Time Spent: 1 hour
 Kiran : 3/17
 Met with team to discuss next steps. Researched tf-idf and associated formulas. Created maps for term frequency, document frequency, inverse document frequency, and tf-idf values.
 Time spent: 4 hours
+
+Polina: 3/16
+Researched and learned more on TF-IDF algoithm and its implementation on our project. Also looked at how other projects also utilized yelp reviews and ranked their ratings based on defined hueristic values outside of the standard positive and negative reviews.
+Time Spent: 2 hours
+
+Polina: 3/17
+Contributed towards the creationg ot eh slide deck, going over all the aspects of the project and collecting the appropriate data from each team member that participated, as well as analyzing the results for how each part was completed and how this affected the reviews being collected.
+Time Spent: 3 hours
