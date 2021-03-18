@@ -1,20 +1,15 @@
 package yelp
 
-import org.apache.spark.SparkContext._
-
-import scala.io._
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.rdd._
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
-
-import scala.collection._
 
 object App {
 
   val INPUT_FILE = "script/yelp_review_trimmed.json"
   val TEST_INPUT = "test_output.txt"
-  val TEST = Array("cant", "i")
+  val TRAINING_SET = "training_set.txt"
+
   val STOP_WORDS = List("a", "about", "above", "after", "again", "against", "ain",
     "all", "am", "an", "and", "any", "are", "aren", "aren't", "as", "at", "be", "because",
     "been", "before", "being", "below", "between", "both", "but", "by", "can", "couldn",
@@ -37,86 +32,36 @@ object App {
     "she'll", "that's", "there's", "they'd", "they'll", "they're", "they've", "we'd",
     "we'll", "we're", "we've", "what's", "when's", "where's", "who's", "why's", "would")
 
-  case class Review(stars: Int, document: String) {
-    private var wordVec = document
-      .replaceAll("[^a-zA-Z ]", "")
-      .toLowerCase()
-      .split(" ")
-      .filter(x => x != "")
 
-    override def toString: String = wordVec.mkString(", ");
-    def setWordVec(newVec : Array[String]) : Unit = {
-      wordVec = newVec
-    }
-    def getWordVec() : Array[String] = {
-      wordVec
-    }
-  }
+  Logger.getLogger("org").setLevel(Level.OFF)
+  Logger.getLogger("akka").setLevel(Level.OFF)
+
+  val conf = new SparkConf().setAppName("NameOfApp")
+    .setMaster("local[4]")
+  val sc = new SparkContext(conf)
 
   def main(args: Array[String]) = {
-    Logger.getLogger("org").setLevel(Level.OFF)
-    Logger.getLogger("akka").setLevel(Level.OFF)
 
-    val conf = new SparkConf().setAppName("NameOfApp")
-      .setMaster("local[4]")
-    val sc = new SparkContext(conf)
-    val reviewsAndTFs = mutable.Map[Int,Array[(String,Double)]]() // review IDs + term frequencies
-    val documentFreq = mutable.Map[String,Int]() // df of unique words across reviews
-    val inverseDocumentFreq = mutable.Map[String,Double]() // idf of unique words across reviews
-    val tfidfMap = mutable.Map[(String,Int),Double]() //(term, docID) -> tf-idf
+    val tfidf = new TfIdf with Serializable;
 
-    val reviews = sc.textFile(TEST_INPUT)
-      .map(_.split(", ", 2))
-      .map(x => (x(0).trim.toInt, x(1)))
-      .map{case (star, text) => Review(star, text)}
-      .map(x => { //get rid of stop words
-        x.setWordVec(x.getWordVec().filterNot(STOP_WORDS.contains(_)))
-        x
-      })
+    val training_set = sc.textFile(TEST_INPUT)
 
-    var id : Int = 0 // get term frequencies
-    reviews.collect().foreach(x => {
-      val temp = sc.parallelize(x.getWordVec()).map(y => (y, 1)).reduceByKey((x, y) => x + y)
-        .map(z => (z._1,1.0*z._2/x.getWordVec().length)).collect()
-      reviewsAndTFs += (id -> temp)
-      id+=1
-    })
-
-    // get document frequencies
-    reviews.collect().foreach(x => {
-      x.getWordVec().foreach(y =>
-        documentFreq.get(y) match {
-          case None => documentFreq += (y -> 1);
-          case Some(xs) => documentFreq.update(y, xs + 1);
-        })
-    })
-
-    //calculate idf for each unique term using df
-    // idf(t) = log(N/(df + 1))
-    documentFreq.foreach(x => {
-      val idf = Math.log10(documentFreq.size/(x._2+1))/Math.log10(2.0)
-      inverseDocumentFreq += (x._1 -> idf)
-    })
-
-    //calculate the td-idf for each term for each document (review)
-    //tf-idf(t, d) = tf(t, d) * log(N/(df + 1)) = tf(t, d) * idf(t)
-    reviewsAndTFs.foreach(x => x._2.foreach(y => {
-      val tfidf = y._2*inverseDocumentFreq.getOrElse(y._1,0.0);
-      tfidfMap += ((y._1,x._1) -> tfidf)
-    }))
-
-    //reviewsAndTFs.foreach(x => println(x._1 + " " + x._2.foreach(print)))
-    //documentFreq.foreach(println)
-    //inverseDocumentFreq.foreach(println)
-    //tfidfMap.foreach(println)
-
-
-
+    tfidf.train(training_set)
+    
+    // for some reason, the idf map only works when you get it like this first
+    val idfMap = tfidf.getIDF;
+    // printing word at tf-idf of each word in reviews array
+    tfidf.getReviews.foreach(review =>
+      sc.parallelize(review.getWordVec())
+        .map{ case (word, tf) => {(word, tf * idfMap.getOrElse(word, 0.0))}}
+        .collect().foreach(println)
+    )
+    
     // cosine similarity
 
     // vectorize tfidf
     // get count of total words over all documents
-    val total_words = documentFreq.size
+    val total_words = tfidf.getDF.size
     // make a word map. word to num to mark index in array
     val wordMap = mutable.Map[String,Int]() // word -> index (a value between 0 and the total num of words)
     val docVectorMap = mutable.Map[Int,Array[Double]]() // docId -> tfidf values if word @ index is in doc
@@ -137,6 +82,5 @@ object App {
     }})
 
     docVectorMap.foreach({case (k, v) => println(k, "[", v.mkString(" "), "]")})
-
   }
 }
