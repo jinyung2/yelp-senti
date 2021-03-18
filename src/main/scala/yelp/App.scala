@@ -93,7 +93,7 @@ object App {
         val star = train.map(_._2).collect()(0)
         topN = (cosSimVal, star)::topN
         })
-      val total = topN.sortBy(_._1).take(3).map(_._2).sum
+      val total = topN.sortBy(_._1).reverse.take(3).map(_._2).sum
       val average = total / 3.0
       printf("TOTAL: %4d\nAVERAGE: %.3f\nACTUAL:  %d\n", total, average, testReview._1)
       print("INPUTTED REVIEW IS: ")
