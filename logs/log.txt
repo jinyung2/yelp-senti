@@ -38,3 +38,19 @@ Time Spent: 2 hours
 Polina: 3/17
 Contributed towards the creationg ot eh slide deck, going over all the aspects of the project and collecting the appropriate data from each team member that participated, as well as analyzing the results for how each part was completed and how this affected the reviews being collected.
 Time Spent: 3 hours
+
+Nithya: 3/12
+Created skeletal version of slides and researched td-idf methods.
+Time Spent: 1 hour
+
+Nithya 3/16
+Researched cosine similarity methods.
+Time Spent: 1 hour
+
+Nithya 3/17
+Wrote initial code for cosine similarity.
+Time Spent: 3 hours
+
+Nithya 3/18
+Added examples for data preprocessing and tfidf in presentation slides.
+Time Spent: 1 hour
