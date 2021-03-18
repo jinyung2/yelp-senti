@@ -9,6 +9,7 @@ object App {
   val INPUT_FILE = "script/yelp_review_trimmed.json"
   val TEST_INPUT = "test_output.txt"
   val TRAINING_SET = "training_set.txt"
+
   val STOP_WORDS = List("a", "about", "above", "after", "again", "against", "ain",
     "all", "am", "an", "and", "any", "are", "aren", "aren't", "as", "at", "be", "because",
     "been", "before", "being", "below", "between", "both", "but", "by", "can", "couldn",
@@ -31,6 +32,7 @@ object App {
     "she'll", "that's", "there's", "they'd", "they'll", "they're", "they've", "we'd",
     "we'll", "we're", "we've", "what's", "when's", "where's", "who's", "why's", "would")
 
+
   Logger.getLogger("org").setLevel(Level.OFF)
   Logger.getLogger("akka").setLevel(Level.OFF)
 
@@ -45,13 +47,40 @@ object App {
     val training_set = sc.textFile(TEST_INPUT)
 
     tfidf.train(training_set)
+    
     // for some reason, the idf map only works when you get it like this first
-    val tfidfMap = tfidf.getIDF;
+    val idfMap = tfidf.getIDF;
     // printing word at tf-idf of each word in reviews array
     tfidf.getReviews.foreach(review =>
       sc.parallelize(review.getWordVec())
-        .map{ case (word, tf) => {(word, tf * tfidfMap.getOrElse(word, 0.0))}}
+        .map{ case (word, tf) => {(word, tf * idfMap.getOrElse(word, 0.0))}}
         .collect().foreach(println)
     )
+    
+    // cosine similarity
+
+    // vectorize tfidf
+    // get count of total words over all documents
+    val total_words = tfidf.getDF.size
+    // make a word map. word to num to mark index in array
+    val wordMap = mutable.Map[String,Int]() // word -> index (a value between 0 and the total num of words)
+    val docVectorMap = mutable.Map[Int,Array[Double]]() // docId -> tfidf values if word @ index is in doc
+    documentFreq.keySet.foreach(word =>{
+      wordMap put (word, IndexFactory.create)
+    })
+    tfidfMap.foreach({case((word, doc), tfidf) => {
+      docVectorMap.get(doc) match {
+        case None => {
+          var arr = Array.fill[Double](total_words)(0) // each document starts with [0 * total words]
+          arr(wordMap.get(word).get) = tfidf // if a word is in the document, the value will be the tfidf of word in doc
+          docVectorMap put (doc, arr)
+        }
+        case Some(arr) => {
+          arr(wordMap.get(word).get) = tfidf
+        }
+      }
+    }})
+
+    docVectorMap.foreach({case (k, v) => println(k, "[", v.mkString(" "), "]")})
   }
 }

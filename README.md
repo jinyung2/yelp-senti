@@ -9,3 +9,6 @@ ambari-node5.csc.calpoly.edu:/home/jchoi108/yelp_review_trimmed_v3.txt
 
 #### Brainstorming/Overview/Ideas:
 [Link for Brainstorming/Overview/Ideas](https://docs.google.com/document/d/1KE7kTAtmHmLbsniTLzBv8nvGclzx6Bp6bBDP-S6SFK4/edit?usp=sharing)
+
+#### Report:
+[Link for Report](https://docs.google.com/document/d/14JFTV39ygifMbuHE1-7FOfBHFr-YfIdfmznkImjzCpk/edit?usp=sharing)
