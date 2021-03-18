@@ -50,3 +50,7 @@ Time Spent: 1 hour
 Nithya 3/17
 Wrote initial code for cosine similarity.
 Time Spent: 3 hours
+
+Nithya 3/18
+Added examples for data preprocessing and tfidf in presentation slides.
+Time Spent: 1 hour
